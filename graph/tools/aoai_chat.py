@@ -1,6 +1,5 @@
-from openai import AzureOpenAI
-
 from mcs_chatbot_v11.settings import settings
+from openai import AzureOpenAI
 
 _client = AzureOpenAI(
     api_key=settings.aoai_api_key,
