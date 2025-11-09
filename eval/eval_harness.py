@@ -7,7 +7,7 @@ import json
 from statistics import mean
 from typing import List
 
-from mcs_chatbot_v11.graph.tools.azure_search import hybrid_search
+from app.graph.tools.azure_search import hybrid_search
 
 
 async def precision_at_k(retrieved: List[str], gold: List[str], k: int = 5) -> float:

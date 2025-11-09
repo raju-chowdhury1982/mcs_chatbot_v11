@@ -1,7 +1,7 @@
 import re  # type: ignore
 
-from mcs_chatbot_v11.graph.state import GraphState
-from mcs_chatbot_v11.graph.tools.aoai_chat import chat_prompt  # type: ignore
+from app.graph.state import GraphState
+from app.graph.tools.aoai_chat import chat_prompt  # type: ignore
 
 JUDGE_SYSTEM = (
     "You are a strict judge that checks grounding and consistency. "

@@ -1,4 +1,4 @@
-from mcs_chatbot_v11.graph.state import GraphState
+from app.graph.state import GraphState
 
 INTENTS = {  # type: ignore
     "status": ["status", "where is", "track", "milestone"],  # benchmark achievement

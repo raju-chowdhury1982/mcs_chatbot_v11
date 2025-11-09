@@ -3,11 +3,10 @@ import time
 
 from langgraph.graph import END, StateGraph  # type: ignore
 
-from mcs_chatbot_v11.graph.nodes import (display_handler, execution_handler,
-                                         intent_handler, judge_reflection,
-                                         query_handler)
-from mcs_chatbot_v11.graph.state import GraphState
-from mcs_chatbot_v11.memory.memory_store import memory_store
+from app.graph.nodes import (display_handler, execution_handler,
+                             intent_handler, judge_reflection, query_handler)
+from app.graph.state import GraphState
+from app.memory.memory_store import memory_store
 
 
 # Edges logic

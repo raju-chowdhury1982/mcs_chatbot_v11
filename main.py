@@ -2,12 +2,12 @@ import os  # type: ignore
 import uuid
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses.cors import CORSMiddleware  # type: ignore
+from fastapi.middleware.cors import CORSMiddleware  # type: ignore
 
-from mcs_chatbot_v11.graph.graph import run_graph
-from mcs_chatbot_v11.middleware import ConsigneeScopeMiddleware
-from mcs_chatbot_v11.schemas import ChatRequest, ChatResponse, Citation
-from mcs_chatbot_v11.settings import settings
+from app.graph.graph import run_graph
+from app.middleware import ConsigneeScopeMiddleware
+from app.schemas import ChatRequest, ChatResponse, Citation
+from app.settings import settings
 
 app = FastAPI(title="MCS Q&A Chatbot API", version="11.0.0")
 

@@ -1,7 +1,7 @@
 import re
 from typing import Dict, Optional
 
-from mcs_chatbot_v11.graph.state import GraphState
+from app.graph.state import GraphState
 
 # more generalized patterns for various IDs are required here
 ID_PATTERN = {

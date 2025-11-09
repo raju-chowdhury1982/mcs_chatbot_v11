@@ -1,9 +1,20 @@
 import requests
 import streamlit as st
 
+# verify the URL
 API_BASE = st.secrets.get(
     "api_base", "http://localhost:8000/chat"
-)  # Adjust as API is hosted hosted
+)  # Adjust as API is hosted
+print(f"Trying to reach: {API_BASE}")
+
+
+# Test if the server is running
+try:
+    response = requests.get(API_BASE.replace("/chat", ""), timeout=5)
+    print(f"Server status: {response.status_code}")
+except Exception as e:
+    print(f"Cannot reach server: {e}")
+
 
 st.set_page_config(page_title="MCS Q&A Chatbot", page_icon="🤖")
 st.title("🚢 MCS Q&A Chatbot 🤖")

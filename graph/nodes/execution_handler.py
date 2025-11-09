@@ -1,10 +1,10 @@
 from typing import List
 
-from mcs_chatbot_v11.graph.nodes.query_handler import \
+from app.graph.nodes.query_handler import \
     run as query_handler_run  # type: ignore
-from mcs_chatbot_v11.graph.state import GraphState, RetrievalDoc
-from mcs_chatbot_v11.graph.tools.aoai_chat import chat_prompt  # type: ignore
-from mcs_chatbot_v11.graph.tools.azure_search import hybrid_search
+from app.graph.state import GraphState, RetrievalDoc
+from app.graph.tools.aoai_chat import chat_prompt  # type: ignore
+from app.graph.tools.azure_search import hybrid_search
 
 SYSTEM_INSTRUCTIONS = (
     "You are a shipment QA assistant. Answer ONLY using the provided documents. "

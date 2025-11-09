@@ -1,5 +1,5 @@
-from mcs_chatbot_v11.graph.nodes import intent_handler, query_handler
-from mcs_chatbot_v11.graph.state import GraphState
+from app.graph.nodes import intent_handler, query_handler
+from app.graph.state import GraphState
 
 
 def test_clarify_path():
